@@ -14,9 +14,7 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <NavigationContainer>
-      <RootNavigator/>
       <MainNavigator />
-      <ShopNavigator/>
       </NavigationContainer>
       <StatusBar style="auto" />
     </SafeAreaProvider>

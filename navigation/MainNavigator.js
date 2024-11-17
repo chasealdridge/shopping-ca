@@ -6,7 +6,7 @@ import { MaterialIcons } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 import HomeScreen from '../Screens/HomeScreen';
 import ShopNavigator from './ShopNavigator';
-import HelpScreen from '../Screens/ShopViewScreen';
+import HelpScreen from '../Screens/HelpScreen';
 
 const Tab = createBottomTabNavigator();
 //const Tab = createMaterialBottomTabNavigator();
