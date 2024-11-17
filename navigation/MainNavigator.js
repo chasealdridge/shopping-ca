@@ -8,8 +8,8 @@ import HomeScreen from '../Screens/HomeScreen';
 import ShopNavigator from './ShopNavigator';
 import HelpScreen from '../Screens/HelpScreen';
 
-const Tab = createBottomTabNavigator();
-//const Tab = createMaterialBottomTabNavigator();
+//const Tab = createBottomTabNavigator();
+const Tab = createMaterialBottomTabNavigator();
 
 export default function MainNavigator() {
   return (
@@ -20,7 +20,7 @@ export default function MainNavigator() {
         options={{
           tabBarLabel: 'Home',
           tabBarIcon: ({ color, size }) => (
-            <MaterialIcons name='home' color={color} size={size} />
+            <MaterialIcons name='home' color={color} size={26} />
           ),
         }}
       />
@@ -30,7 +30,7 @@ export default function MainNavigator() {
         options={{
           tabBarLabel: 'ShopView',
           tabBarIcon: ({ color, size }) => (
-            <MaterialIcons name='shop' color={color} size={size} />
+            <MaterialIcons name='shop' color={color} size={26} />
           ),
         }}
       />
@@ -40,7 +40,7 @@ export default function MainNavigator() {
         options={{
           tabBarLabel: 'Help',
           tabBarIcon: ({ color, size }) => (
-            <MaterialIcons name='help' color={color} size={size} />
+            <MaterialIcons name='help' color={color} size={26} />
           ),
         }}
       />
