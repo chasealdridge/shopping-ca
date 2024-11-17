@@ -4,9 +4,9 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createMaterialBottomTabNavigator } from 'react-native-paper/react-navigation';
 import { MaterialIcons } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons'
-import HomeScreen from '../Screens';
+import HomeScreen from '../Screens/HomeScreen';
 import ShopNavigator from './ShopNavigator';
-import HelpScreen from '../Screens';
+import HelpScreen from '../Screens/ShopViewScreen';
 
 const Tab = createBottomTabNavigator();
 //const Tab = createMaterialBottomTabNavigator();
@@ -20,17 +20,17 @@ export default function MainNavigator() {
         options={{
           tabBarLabel: 'Home',
           tabBarIcon: ({ color, size }) => (
-            <MaterialIcons name='Home' color={color} size={size} />
+            <MaterialIcons name='home' color={color} size={size} />
           ),
         }}
       />
       <Tab.Screen
-        name='Shop'
+        name='ShopView'
         component={ShopNavigator}
         options={{
-          tabBarLabel: 'Shop',
+          tabBarLabel: 'ShopView',
           tabBarIcon: ({ color, size }) => (
-            <MaterialIcons name='Shop' color={color} size={size} />
+            <MaterialIcons name='shop' color={color} size={size} />
           ),
         }}
       />
@@ -40,7 +40,7 @@ export default function MainNavigator() {
         options={{
           tabBarLabel: 'Help',
           tabBarIcon: ({ color, size }) => (
-            <MaterialIcons name='Help' color={color} size={size} />
+            <MaterialIcons name='help' color={color} size={size} />
           ),
         }}
       />
