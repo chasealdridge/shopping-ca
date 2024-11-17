@@ -10,15 +10,19 @@ const Stack = createStackNavigator();
 export default function ShopNavigator() {
   return (
     <Stack.Navigator initialRouteName='ProductView'>
+        screenOptions={{ headerShown: false }}
       <Stack.Screen
+      options={{ title: "ProductView" }}
         name='ProductView'
         component={ShopViewScreen}
       />
       <Stack.Screen
+      options={{ title: "ProductEdit" }}
         name='ProductEdit'
         component={ProductViewScreen}
       />
       <Stack.Screen
+      options={{ title: "ShopView" }}
         name='ShopView'
         component={ProductEditScreen}
       />
